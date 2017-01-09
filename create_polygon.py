@@ -29,8 +29,8 @@ coordpairs = list(zip(xcoords, ycoords))
 print(coordpairs)
 
 # method 2 - iterating over the lists:
-for x, y in (xcoords, ycoords):
-	coordpairs = x + y
+for x, y in zip(xcoords, ycoords):
+	coordpairs = x, y
 	print(coordpairs)
 	
 
@@ -56,4 +56,4 @@ new_shp = geo.to_file(out_shp)
 # P6. Plot the polygon by taking advantage of the .plot() -function in GeoDataFrame. Save a PNG figure out of your plot and upload it to your GitHub repository.
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 geo.plot() 
-
+geo.savefig('geo.png')
