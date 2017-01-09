@@ -36,7 +36,7 @@ for x, y in zip(xcoords, ycoords):
 
 # P2. Create a shapely Polygon using the 'coordpairs' -list
 # ------------------------------------------------------------------------
-poly = Polygon.coordpairs 
+poly = Polygon(coordpairs) 
 
 # P3. Create an empty GeoDataFrame
 # ---------------------------------
